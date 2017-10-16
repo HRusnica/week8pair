@@ -17,7 +17,7 @@ public class AlienAgeCalculator {
 		planetMultiplier.put("Mercury", 0.24);
 		planetMultiplier.put("Venus", 0.62);
 		planetMultiplier.put("Mars", 1.88);
-		planetMultiplier.put("Mercury", 11.86);
+		planetMultiplier.put("Jupiter", 11.86);
 		planetMultiplier.put("Saturn", 29.46);
 		planetMultiplier.put("Uranus", 84.07);
 		planetMultiplier.put("Neptune", 164.81);

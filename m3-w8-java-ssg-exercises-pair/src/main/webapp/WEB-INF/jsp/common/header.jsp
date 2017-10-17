@@ -27,6 +27,7 @@
             <li><a href="${alienAgeUrl}">Alien Age</a></li>
         <c:url value="/alienWeight" var="alienWeightUrl"/>
             <li><a href="${alienWeightUrl}">Alien Weight</a></li>
-            <li><a href="#">Drive Time</a></li>               
+         <c:url value="/alienTravel" var="alienTravelUrl"/>   
+            <li><a href="${alienTravelUrl}">Travel Time</a></li>               
         </ul>
     </nav>

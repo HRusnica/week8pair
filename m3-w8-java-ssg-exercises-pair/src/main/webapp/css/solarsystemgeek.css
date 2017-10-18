@@ -43,6 +43,10 @@ nav {
     margin-top: 25px;
 }
 
+#submit-button {
+	margin-left: 225px;
+}
+
     nav h2, nav p {
         color: #FFF;
         margin-left: 25px;
@@ -106,9 +110,9 @@ li a:hover {
     text-align: left;
 }
 
-.planets img {
-    width: 250px;
-    height: 250px;
+.planets {
+    width: 200px;
+    height: 200px;
     border-color: #FFFFFF;
     border-width: 8px;
     border-style: solid;
@@ -157,6 +161,7 @@ form .field-validation-error {
 form button {
     text-align: center;
     margin-left: 229px;
+    background-color: #9b9a9d;
 }
 
 input[type=text], input[type=datetime], textarea {
@@ -214,4 +219,16 @@ section.centeredPanel {
     font-size: 16px;
     padding: 10px;
     margin-bottom: 10px;
+}
+
+#button {
+	background: #9b9a9d;
+}
+
+#postData {
+	margin: 15px;
+}
+
+#post-container div:nth-child(even) {
+	background-color: #b6b5b7;
 }

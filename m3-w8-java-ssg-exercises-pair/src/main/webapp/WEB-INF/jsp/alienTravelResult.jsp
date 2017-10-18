@@ -4,8 +4,8 @@
 <%@include file="common/header.jsp" %>
 
 <section class= "centeredPanel">
-	<c:url var="planetImageUrl" value="/img/${calculator.planet}.jpg" />
-	<img src="${planetImageUrl}"/>
+	<c:url var="planetImageUrl" value="/img/${calculator.planet.toLowerCase()}.jpg" />
+	<img class="planets" src="${planetImageUrl}"/>
 	<h2>Traveling by <c:out value="${calculator.transportationMode}"/> you will reach 
 	<c:out value="${calculator.planet}"/> in <c:out value="${calculator.travelTime}" /> years 
 	You will be <c:out value="${calculator.spaceAge}"/> years old</h2>

@@ -28,6 +28,10 @@
         <c:url value="/alienWeight" var="alienWeightUrl"/>
             <li><a href="${alienWeightUrl}">Alien Weight</a></li>
          <c:url value="/alienTravel" var="alienTravelUrl"/>   
-            <li><a href="${alienTravelUrl}">Travel Time</a></li>               
+            <li><a href="${alienTravelUrl}">Travel Time</a></li>    
+         <c:url value="/forumPost" var="forumPostUrl"/>   
+            <li><a href="${forumPostUrl}">Space Forum</a></li>  
+         <c:url value="/spaceStore" var="spaceStoreUrl"/>   
+            <li><a href="${spaceStoreUrl}">Space Store</a></li>           
         </ul>
     </nav>

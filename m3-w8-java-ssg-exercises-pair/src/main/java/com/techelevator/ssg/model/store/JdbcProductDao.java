@@ -17,8 +17,8 @@ public class JdbcProductDao implements ProductDao {
 	private JdbcTemplate jdbcTemplate;
 
 	@Autowired
-	public JdbcProductDao(DataSource dataSource) {
-		this.jdbcTemplate = new JdbcTemplate(dataSource);
+	public JdbcProductDao(DataSource ds) {
+		this.jdbcTemplate = new JdbcTemplate(ds);
 	}
 
 	@Override

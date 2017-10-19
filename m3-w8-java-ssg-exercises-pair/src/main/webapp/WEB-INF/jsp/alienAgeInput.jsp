@@ -1,6 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-<%@include file="common/header.jsp" %>
+<%@include file="common/header.jspf" %>
 
 <section class= "centeredPanel">
 	<h2>Alien Age Calculator</h2>
@@ -30,4 +30,4 @@
 </section>
 
 
-<%@include file="common/footer.jsp" %>
+<%@include file="common/footer.jspf" %>

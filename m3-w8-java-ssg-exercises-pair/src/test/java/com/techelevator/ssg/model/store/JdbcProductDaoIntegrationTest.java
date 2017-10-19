@@ -35,7 +35,7 @@ public class JdbcProductDaoIntegrationTest extends DAOIntegrationTest {
 		Product theProduct = new Product();
 		theProduct.setName("Solar System Geek Telescope");
 		theProduct.setDescription("Look at planets and stuff...");
-		theProduct.setPrice(new DollarAmount(9999));
+		theProduct.setPrice(new BigDecimal(9999));
 		theProduct.setImageName("telescope.png");
 		
 		dao.save(theProduct);
@@ -50,13 +50,13 @@ public class JdbcProductDaoIntegrationTest extends DAOIntegrationTest {
 		Product product1 = new Product();
 		product1.setName("Solar System Geek Telescope");
 		product1.setDescription("Look at planets and stuff...");
-		product1.setPrice(new DollarAmount(9999));
+		product1.setPrice(new BigDecimal(9999));
 		product1.setImageName("telescope.png");
 		
 		Product product2 = new Product();
 		product2.setName("Geek Card");
 		product2.setDescription("Make it official...");
-		product2.setPrice(new DollarAmount(499));
+		product2.setPrice(new BigDecimal(499));
 		product2.setImageName("geek_card.png");
 
 		dao.save(product1);

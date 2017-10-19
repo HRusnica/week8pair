@@ -1,7 +1,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 
-<%@include file="common/header.jsp" %>
+<%@include file="common/header.jspf" %>
 
 <section class= "centeredPanel">
 	<c:url var="planetImageUrl" value="/img/${calculator.planet.toLowerCase()}.jpg" />
@@ -11,7 +11,7 @@
 </section>
 
 
-<%@include file="common/footer.jsp" %>
+<%@include file="common/footer.jspf" %>
 
 
 

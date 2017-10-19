@@ -1,6 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
-<%@include file="common/header.jsp" %>
+<%@include file="common/header.jspf" %>
 
 	<body>
 		<section class= "centeredPanel">
@@ -28,5 +28,6 @@
 	</div>
 </form>	
 		</section>
-	</body>
-</html>
+	
+
+<%@include file="common/footer.jspf" %>

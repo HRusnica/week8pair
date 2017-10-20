@@ -232,3 +232,6 @@ section.centeredPanel {
 #post-container div:nth-child(even) {
 	background-color: #b6b5b7;
 }
+#list-image-size {
+	width: 300px;
+}

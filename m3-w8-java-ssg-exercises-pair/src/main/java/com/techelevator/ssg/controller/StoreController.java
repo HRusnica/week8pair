@@ -21,7 +21,7 @@ public class StoreController {
 	private ProductDao productDao;
 
 	public StoreController() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	@RequestMapping(path = "/addToCart", method = RequestMethod.POST)
@@ -30,7 +30,6 @@ public class StoreController {
 			session.setAttribute("shoppingCart", new ShoppingCart());
 		}
 		ShoppingCart sc = (ShoppingCart) session.getAttribute("shoppingCart");
-		Long productId;
 		sc.addProduct(productId, quantity);
 		return "redirect:/shoppingCart/view";
 	}

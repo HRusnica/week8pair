@@ -5,22 +5,27 @@ import java.util.Map;
 
 import javax.servlet.http.HttpSession;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.techelevator.ssg.model.store.Product;
+import com.techelevator.ssg.model.store.ProductDao;
 import com.techelevator.ssg.model.store.ShoppingCart;
 
 public class StoreController {
+	
+	@Autowired
+	private ProductDao productDao;
 
 	public StoreController() {
 		// TODO Auto-generated constructor stub
 	}
 
 	@RequestMapping(path = "/addToCart", method = RequestMethod.POST)
-	public String addProductToCart(@RequestParam Long prouctId, @RequestParam Integer quantity, HttpSession session) {
+	public String addProductToCart(@RequestParam Long productId, @RequestParam Integer quantity, HttpSession session) {
 		if (session.getAttribute("shoppingCart") == null) {
 			session.setAttribute("shoppingCart", new ShoppingCart());
 		}
